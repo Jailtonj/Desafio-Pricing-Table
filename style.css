@@ -19,9 +19,90 @@ body {
 
 /* Fonts */
 
-h1, h2, h3, p {
+h1, h2, h3, p, button {
     font-family: 'Open Sans', sans-serif;
 }
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .fourth {
+    border-color: var(--blue);
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, var(--blue) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, var(--blue) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+
+
+  .btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .fourth2 {
+    border-color: var(--blue);
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, white 50%, transparent 50%);
+    background-image: linear-gradient(45deg, white 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .fourth2:hover {
+    background-position: 0;
+  }
 
 
 .section1{
@@ -29,7 +110,6 @@ h1, h2, h3, p {
     width: 100%;
     height: 40%;
     background-color: var(--blue);
-    display: block;
 
     position: absolute;
     top: 0;
@@ -53,10 +133,7 @@ h1, h2, h3, p {
     font-size: 18px;
 }
 
-main {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .section2 {
     display: flex;
@@ -69,65 +146,60 @@ main {
     width: 355px;
     height: 470px;
     margin-left: 117px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 8px;
+}
 
+.free h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
 }
 
 .free h2 {
+    margin-top: 20px;
     font-size: 30px;
-}
-
-
-.free h3 {
-    font-size: 30px;
-    margin-top: 30px;
-    font-weight: 600;
 }
 
 .free h3, p, h2 {
     margin-left: 30px;
-
 }
 
-.price {
+.pricefree {
     display: flex;
 }
 
-.price p {
+
+.pricefree p {
     margin-left: 5px;
-    padding-top: 4px;
+    padding-top: 25px;
 }
 
 article {
-    font-size: 14px;
+    font-size: 15px;
     display: inline;
 }
 
 .free p {
     margin-right: 4px;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 10px;
     color: #828799;
 }
 
 .line-1 {
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 295px;
     height: 1px;
-    background: #EEEEEE;
-}
-
-.description {
-    margin-top: 40px;
+    background: gray;
 }
 
 .free button {
     width: 250px;
     height: 49px;
-    margin-left: 40px;
-    margin-top: 80px;
+    margin-left: 50px;
+    margin-top: 130px;
 
     background-color: white;
     
@@ -136,9 +208,9 @@ article {
     border-radius: 10px;
 }
 
-a {
+.free a {
     text-decoration: none;
-    color: var(--blue);
+    color: black;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
@@ -148,11 +220,11 @@ a {
 /* Básico */
 .basic {
     width: 355px;
-    height: 480px;
+    height: 470px;
     margin-left: 20px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 8px;
-
+    margin-bottom: 10px;
 }
 
 .yellow {
@@ -166,17 +238,32 @@ a {
 }
 
 #basico {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 15px;
+    color: var(--blue);
 }
 
 .basic h2 {
-    font-size: 30px;
+    font-size: 34px;
+    margin-top: 15px;
+}
+
+.popular {
+    margin-top: 12px;
+    margin-left: 150px;
+    width: 94px;
+    height: 32px;
+    background-color: var(--blue);
+    padding-top: 8.5px;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .basic h3 {
-    font-size: 30px;
+    font-size: 34px;
     margin-top: 30px;
     font-weight: 600;
 }
@@ -186,12 +273,13 @@ a {
 
 }
 
-.price {
+.pricebasic {
     display: flex;
 }
 
-.price p {
+.pricebasic p {
     margin-left: 5px;
+    padding-top: 21px;
 }
 
 article {
@@ -206,34 +294,38 @@ article {
     color: #828799;
 }
 
-.line-2 {
-    margin: auto;
-    margin-bottom: 30px;
-    width: 295px;
-    height: 1px;
-    background: #EEEEEE;
+.description {
+    margin-top: 20px;
 }
 
-.description {
-    margin-top: 40px;
+.line-2 {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 295px;
+    height: 1px;
+    background: gray;
 }
 
 .basic button {
     width: 250px;
     height: 49px;
-    margin-left: 40px;
-    margin-top: 46px;
+    margin-left: 50px;
+    margin-top: 65px;
 
-    background-color: white;
+    background-color: var(--blue);
     
     
     border: 1px solid var(--blue);
     border-radius: 10px;
 }
 
-a {
+.basic a {
+    color: white;
+}
+
+.basic a {
     text-decoration: none;
-    color: var(--blue);
+    color: coral;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
@@ -245,19 +337,20 @@ a {
     width: 355px;
     height: 470px;
     margin-left: 20px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 8px;
 
 }
 
-.profissional h2 {
-    font-size: 30px;
+.profissional h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
 }
 
-.profissional h3 {
+.profissional h2 {
+    margin-top: 20px;
     font-size: 30px;
-    margin-top: 30px;
-    font-weight: 600;
 }
 
 .profissional h3, p, h2 {
@@ -271,6 +364,7 @@ a {
 
 .price p {
     margin-left: 5px;
+    padding-top: 25px;
 }
 
 article {
@@ -280,28 +374,24 @@ article {
 
 .profissional p {
     margin-right: 4px;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 10px;
     color: #828799;
 }
 
 .line-3 {
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 295px;
     height: 1px;
-    background: #EEEEEE;
-}
-
-.description {
-    margin-top: 40px;
+    background: gray;
 }
 
 .profissional button {
     width: 250px;
     height: 49px;
     margin-left: 40px;
-    margin-top: 12px;
+    margin-top: 68px;
 
     background-color: white;
     
@@ -310,10 +400,39 @@ article {
     border-radius: 10px;
 }
 
-a {
+.profissional a {
     text-decoration: none;
-    color: var(--blue);
+    color: black;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
 }
+
+@media(min-width: 1500px) {
+    .section1 h1 {
+        margin-top: 60px;
+        font-size: 48px;
+        color: #FFFFFF;
+        margin-left: 0px;
+    }
+    
+    .section1 p {
+        height: 50px;
+        width: 553px;
+        margin-left: 655px;
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+    
+    .section2 {
+        display: flex;
+        margin-top: 250px;
+        margin-left: 260px;
+    }
+}
+
+@media(max-width: 400px) {
+    
+}
+
