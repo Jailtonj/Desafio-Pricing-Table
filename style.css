@@ -23,6 +23,7 @@ h1, h2, h3, p, button {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Botões */
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -63,8 +64,9 @@ h1, h2, h3, p, button {
     background-position: 0;
   }
 
+  /* botão básico */
 
-  .btn {
+  .btn2 {
     box-sizing: border-box;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -87,12 +89,12 @@ h1, h2, h3, p, button {
     font-weight: 700;
   }
   .btn:hover, .btn:focus {
-    color: #fff;
+    color: coral;
     outline: 0;
   }
   .fourth2 {
     border-color: var(--blue);
-    color: #fff;
+    color: coral;
     background-image: -webkit-linear-gradient(45deg, white 50%, transparent 50%);
     background-image: linear-gradient(45deg, white 50%, transparent 50%);
     background-position: 100%;
@@ -104,6 +106,63 @@ h1, h2, h3, p, button {
     background-position: 0;
   }
 
+  /* Pós clique */
+    /* Free */
+.freetitle {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.freebody {
+    background-color: green;
+    text-align: center;
+}
+
+.freelink {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+    /* Básico */
+  .basictitle {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.basicbody {
+    background-color: blue;
+    text-align: center;
+}
+
+.basiclink {
+    font-size: 35px;
+    text-decoration: none;
+    color: coral;
+}
+    /* Profissonal */
+  .profissionaltitle {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: red;
+}
+
+.profissionalbody {
+    background-color: black;
+    text-align: center;
+}
+
+.profissionallink {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Inicio da Home */
 
 .section1{
     content: '';
@@ -146,7 +205,7 @@ h1, h2, h3, p, button {
     width: 355px;
     height: 470px;
     margin-left: 117px;
-    background-color: whitesmoke;
+    background-color: rgb(239, 236, 236);;
     border-radius: 8px;
 }
 
@@ -202,7 +261,7 @@ article {
     margin-top: 130px;
 
     background-color: white;
-    
+    color: #1D539E;
     
     border: 1px solid var(--blue);
     border-radius: 10px;
@@ -222,7 +281,7 @@ article {
     width: 355px;
     height: 470px;
     margin-left: 20px;
-    background-color: whitesmoke;
+    background-color: rgb(239, 236, 236);;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -313,19 +372,15 @@ article {
     margin-top: 65px;
 
     background-color: var(--blue);
-    
+    color: coral;
     
     border: 1px solid var(--blue);
     border-radius: 10px;
 }
 
-.basic a {
-    color: white;
-}
 
 .basic a {
     text-decoration: none;
-    color: coral;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
@@ -337,7 +392,7 @@ article {
     width: 355px;
     height: 470px;
     margin-left: 20px;
-    background-color: whitesmoke;
+    background-color: rgb(239, 236, 236);
     border-radius: 8px;
 
 }
@@ -373,7 +428,7 @@ article {
 }
 
 .profissional p {
-    margin-right: 4px;
+    margin-right: 8px;
     font-size: 15px;
     margin-top: 10px;
     color: #828799;
@@ -390,11 +445,11 @@ article {
 .profissional button {
     width: 250px;
     height: 49px;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 68px;
 
     background-color: white;
-    
+    color: #1D539E;
     
     border: 1px solid var(--blue);
     border-radius: 10px;
@@ -408,7 +463,7 @@ article {
     text-align: center;
 }
 
-@media(min-width: 1500px) {
+@media(min-width: 1900px) {
     .section1 h1 {
         margin-top: 60px;
         font-size: 48px;
@@ -432,7 +487,235 @@ article {
     }
 }
 
-@media(max-width: 400px) {
+/* Responsividade mobile */
+
+/* @media(max-width: 390px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+
+
+    .section1{
+        content: '';
+        width: 100%;
+        height: 40%;
+        background-color: var(--blue);
     
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        text-align: center;
+    }
+    
+    .section1 h1 {
+        margin-top: 20px;
+        font-size: 35px;
+        color: #FFFFFF; 
+    }
+    
+    .section1 p {
+        height: 50px;
+        width: 390px;
+        margin-left: 0px;
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .section2 {
+        display: flex;
+        margin-top: 250px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    
+    .free {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+    }
+
+    .basic {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .profissional {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+} */
+
+@media(max-width: 414px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+
+
+    .section1{
+        content: '';
+        width: 100%;
+        height: 30%;
+        background-color: var(--blue);
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .section1 h1 {
+        margin-top: 70px;
+        font-size: 35px;
+        color: #FFFFFF;
+        
+    }
+    
+    .section1 p {
+        height: 50px;
+        width: 370px;
+        margin-left: 10px;
+        margin-top: 17px;
+        color: #FFFFFF;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .section2 {
+        display: flex;
+        margin-top: 300px;
+        margin-left: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* cards */
+    .free {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+    }
+
+    .basic {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .profissional {
+        width: 355px;
+        height: 470px;
+        margin-left: 0px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
+
+@media(max-width: 375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+
+
+    .section1{
+        content: '';
+        width: 100%;
+        height: 25%;
+        background-color: var(--blue);
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        text-align: center;
+    }
+
+    .section1 h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        color: #FFFFFF;
+        margin-left: 0px;
+    }
+    
+    .section1 p {
+        height: 50px;
+        width: 375px;
+        margin-left: 0px;
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .section2 {
+        display: flex;
+        margin-top: 220px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    /* cards */
+    .free {
+        width: 355px;
+        height: 470px;
+        margin-left: 10px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+    }
+
+    .basic {
+        width: 355px;
+        height: 470px;
+        margin-left: 10px;
+        background-color: rgb(239, 236, 236);;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .profissional {
+        width: 355px;
+        height: 470px;
+        margin-left: 10px;
+        background-color: rgb(239, 236, 236);
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
 
