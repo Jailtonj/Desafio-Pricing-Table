@@ -34,7 +34,7 @@ Ideia da construção de um site de planos de assinatura para treinar o conhecim
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/iOB7XUMVm62oo2OoYXj9JT/DD-%2F-RocketNews-(Copy)?node-id=3%3A2&t=VVhHSOM5KjDOhPIF-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/oTS0ukVlUu6mJ9HwX1Q4ND/DD-%2F-Pricing-Table-(Copy)?node-id=3%3A2&t=bBoYNk1IHqRtbK3t-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
